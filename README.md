@@ -24,14 +24,15 @@ az login
  docker login <acrname>.azurecr.io
  ```
  When prompted for username and password use one of this two ways to authenticate
-** First way **
+**First way**
   Go to the created resource
   > Settings >
   > Access Keys >
   > Check Admin user box  ✓ 
 
   User username and password provided there
-** Second way **
+  
+**Second way**
  ``` 
  az acr login --name <acrname> --expose-token
  ```
@@ -49,7 +50,7 @@ docker tag <your_image> <acrname>.azurecr.io/<your_image>
 ```
 - image <acrname>.azurecr.io/<your_image>
 ```
-**__FOLLOW THE NAMING CONVENTION, lowercase alphanumerics and hyphen(-) ... DO NOT USE "_" in the container name or it might not run later__**
+**__FOLLOW THE NAMING CONVENTION, lowercase alphanumerics and hyphen(-) ... DO NOT USE "_" in the container name or it might not run later. IMAGE name is not relevant, only the service name__**
 
 ## Push Single Docker Image
 In order to push an image to the registry it must be taged properly like this
@@ -66,5 +67,6 @@ docker-compose push
 Through the Azure CLI create a Web App under App-Services. Choose Docker-Container for "Veröfentlichen" and under the Docker Tab select Docker Compose, Azure Container Registry and upload the docker-compose.yaml file. If you want to use the cli see [here](https://learn.microsoft.com/en-us/azure/app-service/quickstart-multi-container). Keep in mind that there is a **limit** on the size of the docker-compose file of 4000 characters when converted to Base64. (Aprox 1000 normal characters)
 
 # Container instances.
-# through docker compose built in stuff, limitations on ports and stuff, TODO
+# through docker compose built in stuff, limitations on ports and stuff, TODO services named by convention above
 # Through az craete with yaml file that kind of replaces the docker compose
+naame of container follows convention above. port should be the one the container exposes
