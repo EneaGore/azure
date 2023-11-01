@@ -66,3 +66,5 @@ docker-compose push
 Through the Azure CLI create a Web App under App-Services. Choose Docker-Container for "Veröfentlichen" and under the Docker Tab select Docker Compose, Azure Container Registry and upload the docker-compose.yaml file. If you want to use the cli see [here](https://learn.microsoft.com/en-us/azure/app-service/quickstart-multi-container). Keep in mind that there is a **limit** on the size of the docker-compose file of 4000 characters when converted to Base64. (Aprox 1000 normal characters)
 
 # Container instances.
+# through docker compose built in stuff, limitations on ports and stuff, TODO
+# Through az craete with yaml file that kind of replaces the docker compose
