@@ -24,7 +24,9 @@ az login
  docker login <acrname>.azurecr.io
  ```
  When prompted for username and password use one of this two ways to authenticate
+
 **First way**
+
   Go to the created resource
   > Settings >
   > Access Keys >
