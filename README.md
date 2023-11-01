@@ -55,7 +55,6 @@ docker tag <your_image> <acrname>.azurecr.io/<your_image>
 **__FOLLOW THE NAMING CONVENTION, lowercase alphanumerics and hyphen(-) ... DO NOT USE "_" in the container name or it might not run later. IMAGE name is not relevant, only the service name__**
 
 ## Push Single Docker Image
-In order to push an image to the registry it must be taged properly like this
 ```
 docker push <acrname>-azurecr.io/<your_image>
 ```
